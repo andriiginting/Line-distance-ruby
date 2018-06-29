@@ -8,5 +8,8 @@ module Line
           @x2 = x2
           @y2 = y2
       end
+      def get_length
+        length = Math.hypot((@x2 - @x1),(@y2 - @y1))
+      end
   end
 end  
