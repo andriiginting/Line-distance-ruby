@@ -1,7 +1,6 @@
-This is new project called Line. Please change the information in line.gemspec accordingly.
-
 # Line
-This project about calculate distance between two end point and can compare two lines
+This project about calculate distance between two end point and can compare two lines. 
+In this case, i just update the spec
 ## Dependancies
 1. Ruby v2.5
 
