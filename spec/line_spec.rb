@@ -1,5 +1,6 @@
 require "./lib/line.rb"
 
 describe "Line" do
-  puts "haii"
+  it  "initial test" do
+  end
 end
