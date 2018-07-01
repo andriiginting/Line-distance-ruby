@@ -17,6 +17,10 @@ module Line
     def ==(object)
       object.x == @x && object.y == @y
     end
+
+    def hash
+      [@x,@y].hash
+    end
   end
   
 end
