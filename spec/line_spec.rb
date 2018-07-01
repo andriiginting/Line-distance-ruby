@@ -20,4 +20,10 @@ describe "Line" do
     expect(line.get_length).to eq(5)
   end
 
+  it "can compare equal two lines swapped" do
+    first_line = Line::Line.new(Line::Point.new(10,10),Line::Point.new(0,0))
+    second_line = Line::Line.new(Line::Point.new(0,0),Line::Point.new(10,10))
+    expect(first_line == second_line).to eq(true)
+  end
+
 end

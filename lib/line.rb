@@ -12,5 +12,10 @@ module Line
     def get_length
       @first_point.distance_to(@second_point)
     end
+
+    def ==(object)
+      (@first_point == object.first_point && @second_point == object.second_point) ||
+      (@first_point == object.second_point && @second_point == object.first_point)
+    end
   end
 end  
