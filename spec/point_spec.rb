@@ -19,4 +19,11 @@ describe "Point" do
     expect(first_point == second_point).to eq(true)
   end
 
+  it "can compare two  point using hash code " do
+    first_point = Line::Point.new(10,10)
+    second_point = Line::Point.new(10,10)
+    expect(first_point.hash).to eq(second_point.hash)
+  end
+
+
 end

@@ -19,7 +19,12 @@ module Line
     end
 
     def hash
-      [@x,@y].hash
+      prime = 17
+      result = 32
+      result = prime * result + @x
+      result = prime * result + @y
+      return result
+
     end
   end
   
