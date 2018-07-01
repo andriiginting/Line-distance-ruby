@@ -26,4 +26,10 @@ describe "Line" do
     expect(first_line == second_line).to eq(true)
   end
 
+  it "can compare two lines with hash " do
+    line = Line::Line.new(Line::Point.new(10, 10),Line::Point.new(10, 10))
+    expect(line.hash == line.hash).to eq(true)
+  end
+
+
 end

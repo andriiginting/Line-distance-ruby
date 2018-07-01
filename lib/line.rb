@@ -17,5 +17,14 @@ module Line
       (@first_point == object.first_point && @second_point == object.second_point) ||
       (@first_point == object.second_point && @second_point == object.first_point)
     end
+
+    def hash_code
+      prime = 17
+      result = 32
+      result = prime * result + @first.hash_code
+      result = prime * result + @second.hash_code
+      return result
+    end
+
   end
 end  
