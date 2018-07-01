@@ -21,4 +21,14 @@ describe "Square" do
     rectangle = Geometry::Square.new(0,0,0)
     expect(0).to eq(rectangle.get_area)
   end
+
+  it  "can calculate area of square with negative value" do
+    rectangle = Geometry::Square.new(0,0,-10)
+    expect(100).to eq(rectangle.get_area)
+  end
+
+  it  "can calculate area of square with positive value" do
+    rectangle = Geometry::Square.new(0,0,10)
+    expect(100).to eq(rectangle.get_area)
+  end
 end
