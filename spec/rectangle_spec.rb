@@ -19,4 +19,8 @@ describe "Rectangle" do
     rectangle = Geometry::Rectangle.new(0,0,-10,0)
     expect(0).to eq(rectangle.get_perimeter)
   end
+  it  "can create a rectangle with negative length" do
+    rectangle = Geometry::Rectangle.new(0,0,0,-10)
+    expect(0).to eq(rectangle.get_perimeter)
+  end
 end
