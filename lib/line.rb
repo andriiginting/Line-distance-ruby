@@ -1,4 +1,4 @@
-# Your code goes here...
+
 module Line
   class Line
     attr_reader :first_point
@@ -8,6 +8,6 @@ module Line
           @first_point = first_point
           @second_point = second_point
       end
-      
+
   end
 end  
