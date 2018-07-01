@@ -1,5 +1,5 @@
 
-module Line
+module Geometry
   class Line
     attr_reader :first_point
     attr_reader :second_point

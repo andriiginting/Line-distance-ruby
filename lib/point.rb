@@ -1,4 +1,4 @@
-module Line
+module Geometry
   class  Point
     attr_reader :x
     attr_reader :y
