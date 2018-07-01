@@ -23,4 +23,9 @@ describe "Rectangle" do
     rectangle = Geometry::Rectangle.new(0,0,0,-10)
     expect(0).to eq(rectangle.get_perimeter)
   end
+
+  it  "can calculate area of rectangle " do
+    rectangle = Geometry::Rectangle.new(0,0,0,10)
+    expect(0).to eq(rectangle.get_area)
+  end
 end

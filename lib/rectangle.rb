@@ -14,5 +14,10 @@ class Rectangle
     end
     return (((@length * 2 ).abs) + (@width * 2).abs)
   end
+
+  def get_area
+    return (@length * @width).abs
+  end
+
 end
 end
