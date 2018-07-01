@@ -24,4 +24,5 @@ describe "Point" do
     second_point = Line::Point.new(10,10)
     expect(first_point.hash).to eq(second_point.hash)
   end
+  
 end
