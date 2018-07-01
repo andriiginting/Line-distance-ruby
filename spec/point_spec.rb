@@ -13,4 +13,10 @@ describe "Point" do
     expect(first_point.distance_to(second_point)).to eq(0)
   end
 
+  it "can compare two point and should be true" do
+    first_point = Line::Point.new(0,0)
+    second_point = Line::Point.new(0,0)
+    expect(first_point == second_point).to eq(true)
+  end
+
 end

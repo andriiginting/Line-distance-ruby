@@ -13,6 +13,10 @@ module Line
         (object.x - @x), (object.y - @y)
       )
     end
+
+    def ==(object)
+      object.x == @x && object.y == @y
+    end
   end
   
 end
